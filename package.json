@@ -4,6 +4,7 @@
   "description": "Technical Gates VI Frontend Handbook",
   "scripts": {
     "dev": "vitepress dev",
+    "build": "vitepress build",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
   },
