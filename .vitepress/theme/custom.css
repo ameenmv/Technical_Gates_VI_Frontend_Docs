@@ -153,6 +153,14 @@ p code, li code {
   padding-left: 0 !important;
 }
 
+/* On Desktop: shift content leftward to prevent hiding under Right Sidebar */
+@media (min-width: 960px) {
+  [dir='rtl'] .VPContent.has-sidebar {
+    padding-right: var(--vp-sidebar-width, 272px) !important;
+  }
+}
+
+/* On Mobile: content takes full width */
 @media (max-width: 959px) {
   [dir='rtl'] .VPContent {
     padding-right: 0 !important;
@@ -193,8 +201,7 @@ p code, li code {
 
 
 [dir='rtl'] .VPDocAside {
-  left: 0 !important;
-  right: auto !important;
+  /* Let Flexbox naturally position it on the left, don't force absolute coordinates here */
 }
 
 [dir='rtl'] .VPDocOutlineItem {
