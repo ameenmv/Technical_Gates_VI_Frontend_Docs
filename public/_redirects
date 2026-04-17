@@ -1,1 +1,1 @@
-/*    /index.html   200
+# Removed SPA redirect for VitePress (SSG handles deep links via clean URLs)
